@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Undangan Pernikahan</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Poppins,sans-serif;background:#eef0e8;color:#475448;line-height:1.7}
+.container{max-width:520px;margin:auto;background:#f9f7ef;min-height:100vh;overflow:hidden;box-shadow:0 0 30px #0001}
+section{padding:55px 25px;text-align:center;position:relative}
+.cover{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(#e9eee5dd,#f8f5ebf5),url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=80') center/cover}
+.card{padding:38px 25px;border:1px solid #ccd5c5;background:#faf8f0e8;border-radius:90px 90px 18px 18px}
+.small{font-size:12px;letter-spacing:3px;text-transform:uppercase}
+h1,h2{font-family:'Cormorant Garamond',serif}
+h1{font-size:52px;font-weight:500;line-height:1.05;margin:15px 0}
+h2{font-size:40px;font-weight:500;margin-bottom:14px}
+.names{font-size:25px;font-family:'Cormorant Garamond',serif}
+.date{margin:22px 0;font-size:15px}
+.btn{display:inline-block;border:0;background:#667661;color:white;padding:12px 25px;border-radius:30px;text-decoration:none;margin:8px 4px;font-size:13px;cursor:pointer}
+.music{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;border:0;background:#667661;color:#fff;z-index:20;font-size:18px;box-shadow:0 4px 15px #0003}
+.divider{width:70px;height:1px;background:#aab5a3;margin:22px auto}
+.text{font-size:14px;color:#687166}
+.box{background:#fffdf6;border:1px solid #d9dfd4;border-radius:18px;padding:24px;margin:14px 0}
+.event-title{font-family:'Cormorant Garamond';font-size:28px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photo{height:190px;border-radius:16px;object-fit:cover;width:100%}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gift{background:#edf1e8;border-radius:18px;padding:22px}
+footer{padding:45px 20px;text-align:center;background:#e4e9df}
+.fade{animation:fade 1.5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hidden{display:none}
+@media(max-width:360px){h1{font-size:45px}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<section class="cover" id="cover">
+  <div class="card fade">
+    <div class="small">The Wedding Of</div>
+    <h1>Alya<br>&amp;<br>Rizky</h1>
+    <div class="divider"></div>
+    <p class="text">Kepada Yth.</p>
+    <p id="guest" class="names">Tamu Undangan</p>
+    <a href="#home" class="btn" onclick="openInvitation()">Buka Undangan</a>
+  </div>
+</section>
+
+<main id="home">
+<section>
+  <div class="small">Assalamu'alaikum Warahmatullahi Wabarakatuh</div>
+  <h2>Dengan penuh rasa syukur</h2>
+  <p class="text">Kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada pernikahan kami.</p>
+  <div class="divider"></div>
+  <div class="names">Alya Putri</div>
+  <p>&amp;</p>
+  <div class="names">Rizky Ramadhan</div>
+  <p class="date">Minggu, 18 Oktober 2026</p>
+</section>
+
+<section>
+  <h2>Save The Date</h2>
+  <div class="box">
+    <div class="grid">
+      <div><b id="days">0</b><br><span class="text">Hari</span></div>
+      <div><b id="hours">0</b><br><span class="text">Jam</span></div>
+      <div><b id="minutes">0</b><br><span class="text">Menit</span></div>
+      <div><b id="seconds">0</b><br><span class="text">Detik</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Our Special Day</h2>
+  <div class="box">
+    <div class="event-title">Akad Nikah</div>
+    <p>09.00 WIB – selesai</p>
+    <div class="divider"></div>
+    <div class="event-title">Resepsi</div>
+    <p>11.00 – 14.00 WIB</p>
+    <p class="text">Gedung Serbaguna Bahagia<br>Jl. Contoh No. 123, Bandung</p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Gedung+Serbaguna+Bahagia+Bandung" target="_blank">📍 Lihat Lokasi</a>
+  </div>
+</section>
+
+<section>
+  <h2>Our Story</h2>
+  <div class="box">
+    <p class="text">Berawal dari sebuah pertemuan sederhana, kemudian menjadi cerita yang terus kami tuliskan bersama. Dengan izin Allah, perjalanan ini akhirnya membawa kami menuju satu janji untuk saling menemani dalam suka dan duka.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img class="photo" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80">
+    <img class="photo" src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=600&q=80">
+    <img class="photo" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80">
+    <img class="photo" src="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?auto=format&fit=crop&w=600&q=80">
+  </div>
+</section>
+
+<section>
+  <h2>Doa &amp; Ucapan</h2>
+  <div class="box">
+    <p class="text">“Semoga Allah menjadikan pernikahan ini penuh sakinah, mawaddah, dan rahmah, serta selalu memberikan keberkahan dalam setiap langkahnya.”</p>
+  </div>
+  <a class="btn" href="https://wa.me/?text=Selamat%20menempuh%20hidup%20baru%20Alya%20dan%20Rizky!%20Semoga%20menjadi%20keluarga%20yang%20sakinah%2C%20mawaddah%2C%20warahmah." target="_blank">💌 Kirim Ucapan</a>
+</section>
+
+<section>
+  <h2>Wedding Gift</h2>
+  <div class="gift">
+    <p class="text">Bagi keluarga dan sahabat yang ingin memberikan tanda kasih, dapat melalui:</p>
+    <br>
+    <b>Bank BCA</b><br>
+    <span>1234567890</span><br>
+    <small>a.n. Alya Putri</small><br>
+    <button class="btn" onclick="copyText('1234567890')">Salin Nomor Rekening</button>
+  </div>
+</section>
+
+<section>
+  <h2>Terima Kasih</h2>
+  <p class="text">Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+  <div class="divider"></div>
+  <div class="names">Alya &amp; Rizky</div>
+</section>
+
+<footer>
+  <small>Made with love ♡</small>
+</footer>
+</main>
+</div>
+
+<button class="music" id="musicBtn" onclick="toggleMusic()">♫</button>
+<audio id="music" loop preload="auto">
+  <source src="ssstik.io_1790780248155.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const params=new URLSearchParams(location.search);
+const guest=params.get('to');
+if(guest){
+  document.getElementById('guest').textContent=decodeURIComponent(guest.replace(/\+/g,' '));
+}
+const target=new Date('2026-10-18T09:00:00+07:00').getTime();
+function countdown(){
+ const now=Date.now(), d=Math.max(0,target-now);
+ document.getElementById('days').textContent=Math.floor(d/86400000);
+ document.getElementById('hours').textContent=Math.floor(d%86400000/3600000);
+ document.getElementById('minutes').textContent=Math.floor(d%3600000/60000);
+ document.getElementById('seconds').textContent=Math.floor(d%60000/1000);
+}
+setInterval(countdown,1000); countdown();
+
+const audio=document.getElementById('music');
+let playing=false;
+function openInvitation(){
+ audio.play().then(()=>{playing=true;document.getElementById('musicBtn').textContent='❚❚'}).catch(()=>{});
+}
+function toggleMusic(){
+ if(playing){audio.pause();playing=false;document.getElementById('musicBtn').textContent='♫'}
+ else{audio.play().then(()=>{playing=true;document.getElementById('musicBtn').textContent='❚❚'}).catch(()=>alert('Pastikan file musik berada satu folder dengan index.html.'))}
+}
+function copyText(t){
+ navigator.clipboard?.writeText(t);
+ alert('Nomor rekening berhasil disalin.');
+}
+</script>
+</body>
+</html>
